@@ -1,10 +1,10 @@
 import {Component, inject} from '@angular/core';
-import {ActivatedRoute, Router} from "@angular/router";
+import {ActivatedRoute, Router, RouterOutlet} from "@angular/router";
 
 @Component({
   selector: 'app-welcome',
   standalone: true,
-  imports: [],
+  imports: [RouterOutlet],
   templateUrl: './welcome.component.html',
   styleUrl: './welcome.component.scss'
 })
@@ -15,7 +15,7 @@ export class WelcomeComponent {
 
 
   onClickSignUp() {
-    this.router.navigate(['sign-up'],{
+    this.router.navigate(['signup'],{
       relativeTo: this.activatedRoute
     }).then(success => {
       if (success) {

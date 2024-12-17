@@ -1,1 +1,20 @@
-<p>login works!</p>
+<h1 class="text-center mt-5 mb-5">Track It</h1>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="max-container">
+    <div class="container-box">
+      <div class="username-box">
+        <input id="username" type="text" formControlName="username" placeholder="Username">
+      </div>
+      <div class="password-box">
+        <input id="password" type="text" formControlName="password" placeholder="Password">
+      </div>
+      <div class="remember-box">
+        <input id="remember" type="checkbox" formControlName="remember">
+        <label for="remember">Remember Me</label>
+      </div>
+      <button>Submit</button>
+    </div>
+  </div>
+</form>
+
+
