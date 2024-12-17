@@ -1,8 +1,17 @@
+.big-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .box-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .title {
@@ -13,4 +22,19 @@
 
 .under-title {
   font-size: 2rem;
+}
+
+.box-button {
+  width: 35%;
+  margin: auto;
+}
+
+.custom-btn {
+  font-size: 1.8rem; /* Increase font size for button text */
+  margin: 1rem 0; /* Space between buttons */
+  width: 100%;
+
+  display: flex; /* Use flexbox to align the content inside the button */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
