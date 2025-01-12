@@ -28,6 +28,7 @@ export class LoginComponent {
     else {
       console.log('Form Failed!');
       this.form.markAllAsTouched();
+      console.log(this.form.valid);
     }
   }
 }
