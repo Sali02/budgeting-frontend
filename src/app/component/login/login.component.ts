@@ -11,7 +11,7 @@ import {FormControl, ReactiveFormsModule, Validators, FormGroup} from "@angular/
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
-  form = new FormGroup({
+  form = new FormGroup({ // TODO: typed reactive forms/type groups
     username: new FormControl('', {
       validators: [Validators.required]
     }),

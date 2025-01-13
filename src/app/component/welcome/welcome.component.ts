@@ -15,17 +15,7 @@ export class WelcomeComponent {
 
 
   onClickSignUp() {
-    this.router.navigate(['signup'],{
-      relativeTo: this.activatedRoute
-    }).then(success => {
-      if (success) {
-        console.log(success);
-      }
-      else
-      {
-        console.log(success);
-      }
-    });
+    this.router.navigate(['/signup']).then();
   }
 
   onClickLogIn(): void{
@@ -33,7 +23,7 @@ export class WelcomeComponent {
       relativeTo: this.activatedRoute
     }).then(success => {
       if (success) {
-        console.log(success);
+        console.log(success, 'success');
       }
       else
       {

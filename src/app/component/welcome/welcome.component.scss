@@ -1,40 +1,32 @@
-.big-container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .box-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  display: flex; // TODO: bs
+  flex-direction: column; // TODO: bs
+  align-items: center; // TODO: bs
+  justify-content: center; // TODO: bs
+  text-align: center; // TODO: bs
 }
 
 .title {
-  font-size: 3.4rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+  font-size: 3.4rem;  // TODO: bs
+  font-weight: bold; // TODO: bs
+  margin-bottom: 1rem; // TODO: bs
 }
 
 .under-title {
-  font-size: 2rem;
+  font-size: 2rem; // TODO: bs
 }
 
 .box-button {
-  width: 35%;
-  margin: auto;
+  //width: 35%;
+  margin: auto;  // TODO: bs
 }
 
 .custom-btn {
-  font-size: 1.8rem; /* Increase font size for button text */
-  margin: 1rem 0; /* Space between buttons */
-  width: 100%;
+  font-size: 1.8rem; /* Increase font size for button text */  // TODO: bs
+  margin: 1rem 0; /* Space between buttons */  // TODO: bs
+  width: 100%; // TODO: bs
 
-  display: flex; /* Use flexbox to align the content inside the button */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  display: flex; /* Use flexbox to align the content inside the button */  // TODO: bs
+  justify-content: center; /* Center horizontally */ // TODO: bs
+  align-items: center; /* Center vertically */ // TODO: bs
 }
