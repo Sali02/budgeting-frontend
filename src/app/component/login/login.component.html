@@ -1,18 +1,20 @@
 <h1 class="text-center mt-5 mb-5">Track It</h1>
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
-  <div class="max-container">
-    <div class="container-box">
-      <div class="username-box">
-        <input id="username" type="text" formControlName="username" placeholder="Username">
+  <div class="d-flex flex-column justify-content-center align-items-center">
+    <div class="bg-secondary rounded-2 p-4">
+      <div class="username-box rounded-2 mb-3">
+        <input id="username" class="fs-6 fs-2 rounded-2 border border-secondary border-2 text-white p-2" type="text" formControlName="username" placeholder="Username">
       </div>
-      <div class="password-box">
-        <input id="password" type="text" formControlName="password" placeholder="Password">
+      <div class="password-box rounded-2 mb-3">
+        <input id="password" class="fs-6 fs-2 rounded-2 border border-secondary border-2 text-white p-2" type="text" formControlName="password" placeholder="Password">
       </div>
-      <div class="remember-box">
-        <input id="remember" type="checkbox" formControlName="remember">
-        <label for="remember">Remember Me</label>
+      <div class="bg-secondary text-center">
+        <input id="remember" class="bg-secondary m-1" type="checkbox" formControlName="remember">
+        <label for="remember" class="bg-secondary m-1">Remember Me</label>
       </div>
-      <button>Submit</button>
+      <div class="text-center mt-3">
+        <button class="btn btn-primary" value="submit">Log In</button>
+      </div>
     </div>
   </div>
 </form>
