@@ -82,6 +82,7 @@ export class SignupComponent {
   onSubmit() {
     if(this.form.valid) {
       this.router.navigate(['overview']).then();
+
     }
     else {
       console.log('Unsuccess', this.form.value);
