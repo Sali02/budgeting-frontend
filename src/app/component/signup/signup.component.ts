@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
 import {AbstractControl, FormControl, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
+import {RouterLink, Router} from '@angular/router';
 
 function equalValues(controlName1: string, controlName2: string) {
   return (control: AbstractControl) => {
@@ -19,11 +20,14 @@ function equalValues(controlName1: string, controlName2: string) {
 @Component({
   selector: 'app-signup',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, RouterLink],
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.scss'
 })
 export class SignupComponent {
+
+  private router = inject(Router);
+
   form = new FormGroup({
     firstName: new FormControl('', {
       validators: [Validators.required]
@@ -77,7 +81,7 @@ export class SignupComponent {
 
   onSubmit() {
     if(this.form.valid) {
-      console.log('Form Submitted Successfully' ,this.form.value);
+      this.router.navigate(['overview']).then();
     }
     else {
       console.log('Unsuccess', this.form.value);

@@ -19,16 +19,6 @@ export class WelcomeComponent {
   }
 
   onClickLogIn(): void{
-    this.router.navigate(['login'], {
-      relativeTo: this.activatedRoute
-    }).then(success => {
-      if (success) {
-        console.log(success, 'success');
-      }
-      else
-      {
-        console.log(success);
-      }
-    });
+    this.router.navigate(['login']).then()
   }
 }
