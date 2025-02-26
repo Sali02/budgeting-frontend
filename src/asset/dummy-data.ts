@@ -9,7 +9,7 @@ export const DUMMY_DATA = [
   {
     id: 2,
     movement: 'earning',
-    transaction: 'dividend',
+    transaction: 'stock dividend',
     amount: 110,
     date: new Date(2025, 1, 6),
   },
@@ -23,21 +23,21 @@ export const DUMMY_DATA = [
   {
     id: 4,
     movement: 'expense',
-    transaction: 'recurring expense',
+    transaction: 'housing',
     amount: 1200,
     date: new Date(2025, 1, 4),
   },
   {
     id: 4,
     movement: 'expense',
-    transaction: 'variable expense',
+    transaction: 'transportation',
     amount: 800,
     date: new Date(2025, 1, 8),
   },
   {
     id: 4,
     movement: 'expense',
-    transaction: 'discretionary expense',
+    transaction: 'food and groceries',
     amount: 620,
     date: new Date(2024, 1, 11),
   },
