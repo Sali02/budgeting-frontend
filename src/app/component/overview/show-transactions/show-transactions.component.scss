@@ -1,0 +1,19 @@
+/* Custom CSS for background colors */
+tr.earning {
+  background-color: #28a745 !important; /* Green for earnings */
+  color: white;
+}
+
+tr.expense {
+  background-color: #dc3545 !important; /* Red for expenses */
+  color: white;
+}
+
+/* Optional: Add hover effect for better UX */
+tr.earning:hover {
+  background-color: #218838 !important; /* Darker green on hover */
+}
+
+tr.expense:hover {
+  background-color: #c82333 !important; /* Darker red on hover */
+}
